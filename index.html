@@ -18,6 +18,7 @@
         .logo {
             width: 150px;
             height: auto;
+            border-radius: 20px;
         }
         h1 {
             color: #333;
@@ -26,16 +27,63 @@
             color: #666;
             max-width: 600px;
             margin: 0 auto;
+            line-height: 1.6;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 14px;
+            margin: 0;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            color: #999;
         }
     </style>
 </head>
 <body>
     <header>
+        <!-- Image from your img folder -->
         <img src="img/Logo.png" alt="Gang of Geeks Logo" class="logo">
         <h1>Welcome to Gang of Geeks</h1>
     </header>
     <main>
         <p>Join our vibrant education community where geeks unite to learn, share knowledge, and innovate. Explore tutorials, forums, and resources to level up your skills!</p>
+        
+        <div class="features">
+            <div class="card">
+                <h3> Tutorials</h3>
+                <p>Learn from expert-led tutorials</p>
+            </div>
+            <div class="card">
+                <h3> Forums</h3>
+                <p>Discuss with fellow geeks</p>
+            </div>
+            <div class="card">
+                <h3> Resources</h3>
+                <p>Access premium learning materials</p>
+            </div>
+        </div>
     </main>
+    <footer>
+        <p>&copy; 2026 Gang of Geeks. All rights reserved.</p>
+    </footer>
 </body>
 </html>
